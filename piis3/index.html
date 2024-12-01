@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="shirts.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>T-Shirts</h1>
+    <!-- контейнер, динамическое добавление карточек в разметку -->
+    <div id="shirtsContainer" class="shirts-container"></div>
+
+    <!-- модальное окно -->
+    <div id="quickViewModal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <!-- основной контейнер для содержимого модального окна -->
+        <div class="modal-content">
+            <!-- контейнер для фоток -->
+            <div class="images-container">
+                <img id="quickViewFrontImage" src="" alt="Front View" />
+                <img id="quickViewBackImage" src="" alt="Back View" />
+            </div>
+            <h2 id="quickViewTitle" class="card-title"></h2>
+            <p id="quickViewDescription" class="card-sub"></p>
+            <p id="quickViewPrice" class="card-sub"></p>
+            <!-- контейнер для кнопки -->
+            <div class="btn-keeper">
+                <button class="btn" id="closeModalButton">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная №8</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Мини графический редактор</h1>
+    <div class="controls">
+        <div class="fill-selection">
+            <label>
+                <input type="radio" name="fill" value="transparent" checked> Пустой
+            </label>
+            <label>
+                <input type="radio" name="fill" value="filled"> Залить
+            </label>
+        </div>
+
+        <div class="btn-keeper">
+            <button onclick="selectShape('circle')">Круг</button>
+            <button onclick="selectShape('rectangle')">Прямоугольник</button>
+            <button onclick="selectShape('triangle')">Треугольник</button>
+            <button onclick="selectShape('line')">Линия</button>
+        </div>
+        
+        <div class="color-selection">
+            <label for="colorPicker">Цвет:</label>
+            <input type="color" id="colorPicker" value="#ff0000">
+        </div>
+    </div>
+
+    <canvas id="drawingArea" width="600" height="500"></canvas>
+
+    <div class="btn-keeper">
+        <button id="clearButton">Очистить</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
